@@ -15,11 +15,11 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func txtLastName(_ sender: UITextField) {
-    }
+   
+    @IBOutlet weak var txtFirstName: UITextField!
     
-    @IBAction func txtFirstName(_ sender: UITextField) {
-    }
+    
+    @IBOutlet weak var txtLastName: UITextField!
     
     @IBAction func goTOSecondVC(_ sender: Any) {
         

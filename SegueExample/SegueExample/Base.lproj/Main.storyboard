@@ -30,7 +30,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="FirstName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="FIe-uG-k8q"/>
-                                    <action selector="txtFirstName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Cr9-sY-yjQ"/>
+                                    <action selector="txtFirstName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="yNY-fK-RhS"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last  Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="clm-NZ-eGt">
@@ -58,6 +58,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="J4J-37-332"/>
                     <connections>
+                        <outlet property="txtFirstName" destination="sN4-CT-Upy" id="oGa-y6-hYc"/>
+                        <outlet property="txtLastName" destination="clm-NZ-eGt" id="Uud-ad-Qno"/>
                         <segue destination="YwI-3e-maY" kind="show" identifier="segueToSecondVC" id="HEC-5K-svH"/>
                     </connections>
                 </viewController>

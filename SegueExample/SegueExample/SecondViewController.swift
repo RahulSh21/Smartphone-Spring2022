@@ -12,7 +12,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        lblwelcome.text = welcomeStr
+        lblwelcome.text = welcomeStr //this will load Data from previous screen
         
         // Do any additional setup after loading the view.
     }
