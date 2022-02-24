@@ -43,7 +43,7 @@ class ViewController: UIViewController, firstandLastNameDelegate {
     }
     
         
-        func setWelcomeText(welcomeText: String) {
+        func welcomeText(welcomeText: String) {
             lblWelcome.text = welcomeText
         }
        

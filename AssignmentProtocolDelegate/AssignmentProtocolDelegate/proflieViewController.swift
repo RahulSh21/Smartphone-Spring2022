@@ -9,6 +9,7 @@ import UIKit
 
 protocol firstandLastNameDelegate {
     func firstandSecondName(firstName: String, lastName: String)
+    func welcomeText(welcomeText : String)
 }
 
 class proflieViewController: UIViewController {
@@ -45,7 +46,7 @@ class proflieViewController: UIViewController {
                 
                 
         firstandLastNameDelegate?.firstandSecondName(firstName: first, lastName: last)
-       // firstandLastNameDelegate?.firstandSecondName(welcomeText: "Welcome \(first), \(last)")
+       firstandLastNameDelegate?.welcomeText(welcomeText: "Welcome \(first), \(last)")
         
                 self.navigationController?.popViewController(animated: true)
     }
