@@ -1,0 +1,6 @@
+framework module Pods_hailStock {
+  umbrella header "Pods-hailStock-umbrella.h"
+
+  export *
+  module * { export * }
+}
