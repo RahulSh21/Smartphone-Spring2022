@@ -1,5 +1,5 @@
 //
-//  APIkeys.swift
+//  URL.swift
 //  StockDetails
 //
 //  Created by Rahul Shukla on 2/27/22.
@@ -7,5 +7,4 @@
 
 import Foundation
 
-
-let apikey = "8e59fe7bea31dad218b69ad09f13c5fe"
+let stockRating = "https://financialmodelingprep.com/api/v3/rating/"
