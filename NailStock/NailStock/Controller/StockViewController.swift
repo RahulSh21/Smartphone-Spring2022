@@ -46,7 +46,7 @@ class StockViewController: UIViewController {
                     quote.price = stock["price"].floatValue
                     quote.volume = stock["volume"].intValue
                     
-                    self.lblStock.text = "\(quote.symbol) : \(quote.price) $"
+                    self.lblStock.text = "\(quote.symbol) : \(quote.price)$ \(quote.volume) "
 
                     
                 }

@@ -9,8 +9,8 @@ import Foundation
 
 
 class StockRating {
-    
-    var symbol :String = ""
+
+    var symbol : String = ""
     var date : String  = ""
     var rating : String = ""
     var ratingScore : Int = 0

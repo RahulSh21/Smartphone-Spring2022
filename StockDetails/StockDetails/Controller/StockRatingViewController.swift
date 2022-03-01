@@ -26,7 +26,7 @@ class StockRatingViewController: UIViewController {
         
         guard let symbol = txtStock.text else { return }
                 
-                let url = "\(stockRating)\(symbol.uppercased())?APIkeys=\(apikey)"
+                let url = "\(stockRating)\(symbol.uppercased())?apikey=\(apikey)"
                 
                 SwiftSpinner.show("Getting Stock Value for \(symbol)")
                         AF.request(url).responseJSON { response in
@@ -44,7 +44,7 @@ class StockRatingViewController: UIViewController {
                             let details = StockRating()
                             details.symbol = stock["symbol"].stringValue
                             details.date = stock["date"].stringValue
-                            details.rating = stock["volume"].stringValue
+                            details.rating = stock["rating"].stringValue
                             
                             details.ratingScore = stock["ratingScore"].intValue
                             details.ratingRecommendation = stock["ratingRecommendation"].stringValue
@@ -61,7 +61,7 @@ class StockRatingViewController: UIViewController {
                             details.ratingDetailsPBScore = stock["ratingDetailsPBScore"].intValue
                             details.ratingDetailsPBRecommendation = stock["ratingDetailsPBRecommendation"].stringValue
                             
-                            self.lblStock.text = "\(details.symbol) : \(details.date) \(details.rating) \(details.ratingScore)"
+                            self.lblStock.text = "Stock Name: \(details.symbol), \(details.date)  ,\(details.rating) , \(details.ratingScore)"
                             
                            
     }
